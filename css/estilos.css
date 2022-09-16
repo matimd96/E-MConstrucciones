@@ -1,0 +1,260 @@
+html{
+    font-size: 62,5%;
+}
+
+.menuPrincipal ul{
+    list-style-type: none;
+}
+
+.menuPrincipal ul li{
+display: inline-block;
+padding: 0px 50px;
+
+
+
+
+}
+
+.menuPrincipal{
+    margin: 0px;
+}
+
+.logotipo{
+    height: 110px;
+    width: 165px;
+}
+
+a{
+    text-decoration: none;
+    color: white;    
+}
+
+body{
+    background-color: rgb(117, 115, 112);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+.titulos{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.subtituloIndex{
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.tituloIndex1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.textoContacto{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 20px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.botonesContacto{
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.textoRellenar{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.imagenesIndex{
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+    
+}
+
+
+
+.imagenesArquitectura{
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+}
+
+.subtitulosArquitectura{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.subsubtitulosArquitectura{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.footer{
+    background-color:rgba(75, 74, 74, 0.733);
+    font-weight: bolder;
+    font-style: italic;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+
+    
+}
+
+.redesFlotantes img{
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    display: inline-block;
+    
+    
+}
+
+.whatsapp img{
+    width: 40px;
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.04fr 0.1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+
+}
+
+.header{
+    background-color:rgba(75, 74, 74, 0.733);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: header;
+    
+    
+}
+    
+.main{
+    grid-area: main;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    grid-area: section;
+    
+}
+
+
+
+.imagenesArquitectura1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-end;
+    
+
+}
+.imagenesIndex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    grid-area: section;
+     
+
+}
+
+.imagenesIndex1 img{
+    transition: all 3s;
+}
+
+.imagenesIndex1 img:hover{
+    width: 550px;
+    height: 400px;
+
+}
+
+.imagenesArquitectura1 img{
+    transition: all 2s;
+
+}
+
+.imagenesArquitectura1 img:hover{
+    width: 450px;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .menuPrincipal ul li{
+         padding: 0px 10px;
+    }
+    .contenedor{
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.15fr;
+    
+    }
+    .imagenesArquitectura{
+        width: 300px;
+        height: 200px;}
+        
+
+}
+
+@media screen and (max-width: 490px) {
+    
+    .tituloIndex1{ 
+        font-size: 23px;
+    }
+    .section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .menuPrincipal ul li{
+        display: block;
+        
+    }
+
+    .contenedor{
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.15fr;
+    
+    }
+
+}
