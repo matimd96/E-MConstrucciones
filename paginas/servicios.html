@@ -11,46 +11,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <img class="logotipo" src="../multimedia/logo.jpg" alt="Logo E&M Construcciones">
-        <nav class="menuPrincipal">
-            <ul>
-                <li><a href="../index.html">INICIO</a> </li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="arquitectura.html">ARQUITECTURA</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>             
+    <nav class="navbar navbar-expand-lg bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logotipo" src="../multimedia/logo.jpg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="arquitectura.html">ARQUITECTURA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"href="contacto.html">CONTACTO</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class="titulos">SERVICIOS</h1>
-        <fieldset>
-            <legend><h2>Etapa de Diseño</h2></legend>
-            <br>
-            <h3>Proyectos</h3>
-            <br>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat vel quas itaque omnis tempore at, quasi explicabo eaque ducimus soluta rerum delectus non maiores? Nihil velit ipsum quas tempore.</p>
+          </div>
+        </div>
+      </nav>
+    <main class="container-fluid">
+        <h1 class="titulos my-5">SERVICIOS</h1>
+        <h2 class="d-flex justify-content-center my-5">Etapa de Diseño</h2>
+            
+            <h4 class="mx-5 mb-5">Proyectos</h4>
+            
+            <p class="mx-5"> Nuestra visión del proyecto arquitectónico consiste en realizar un desarrollo intelectual acompañado de un proceso de diseño, a través del cual podamos satisfacer los requerimientos y necesidades del comitente, combinando las variables tecnológicas, estéticas y económicas para hacer una arquitectura sustentable.</p>
 
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend><h2>Ejecución de Obra</h2></legend>
-            <h3>Direccion Técnica</h3>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus culpa enim facere. Sapiente distinctio culpa, ipsum, quia temporibus expedita dolor error unde repellat quam harum sed amet facere quidem aliquid.</p>
-            <br>
-            <h3>Conduccion Técnica</h3>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea, commodi alias reiciendis laborum cum fuga libero magnam ullam. Quam non eaque suscipit? Rerum, architecto laborum est perferendis expedita voluptatem?</p>
-        </fieldset>
+            <p class="mx-5"> aquí surge nuestra convicción de que el proyecto, es la base fundamental para el correcto desarrollo de cualquier obra de arquitectura. Esta base se respalda con un conjunto de planos, dibujos, esquemas y textos, que combinados forman un legajo técnico el cual permite la correcta ejecución de dicho proyecto.
+            Desde el año 2006 acompañamos a nuestros clientes en la definición y concreción de sus sueños.</p>
+
+        
+
+        
+            <h2 class="d-flex justify-content-center my-5">Ejecución de Obra</h2>
+            <h4 class="mx-5 mb-5" >Direccion Técnica</h4>
+            <p class="mx-5">Para la correcta ejecución de una obra debemos contar con un Director Técnico quien es el agente responsable que, dirige el desarrollo de la obra en los aspectos técnicos, en conformidad con el proyecto técnico de la misma, los permisos de edificación y demás autorizaciones preceptivas, además de las condiciones de contrato, con el objeto de asegurar la adecuación al fin propuesto.</p>
+            <h4 class="mx-5 my-5">Conduccion Técnica</h4>
+            <p class="mx-5 mb-5">Además debemos contar con un Conductor Técnico que una vez Iniciada la ejecución material de la obra, este pueda interpretar y traspasar a la realidad, el lenguaje simbólico de líneas, dibujos y números, con que se han expresado los planos del proyecto ejecutivo, que además ordene, dirija y coordine las distintas actividades de todas aquellas personas y materiales que de una u otra forma intervendrán en el proceso constructivo.</p>
+        
     </main>
-    <br>
-    <hr>
-    <footer class="footer">
-        <p>Derechos reservados a E&M Construcciones</p>
+    <footer class="footer1 container-fluid">
+        <p>Derechos reservados a E&M Construcciones   </p>
 
         <div class="redesFlotantes">
             <a href="https://www.instagram.com/eymconstrucciones"target="_blank"><img src="../multimedia/instagram.jpg" alt="Instagram"></a>
@@ -58,10 +70,13 @@
         </div>
 
         <div class="whatsapp">
-           <a href="https://web.whatsapp.com/"target="_blank"> <img src="../multimedia/iconowhatsapp.png" alt=""></a>
+        <a href="https://web.whatsapp.com/"target="_blank"> <img src="multimedia/iconowhatsapp.png" alt=""></a>
         </div>
-       
-        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.18510361417!2d-58.317042099999995!3d-34.7005109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33267ae84657b%3A0x645bad1f9ae86958!2sEstanislao%20Zeballos%206036%2C%20B1875BNH%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661375122299!5m2!1ses-419!2sar" width="1330" height=100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>  
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.18510361417!2d-58.317042099999995!3d-34.7005109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33267ae84657b%3A0x645bad1f9ae86958!2sEstanislao%20Zeballos%206036%2C%20B1875BNH%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661375122299!5m2!1ses-419!2sar" width="100%" height=100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
 </body>
 </html>

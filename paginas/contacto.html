@@ -11,51 +11,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <img class="logotipo" src="../multimedia/logo.jpg" alt="Logo E&M Construcciones">
-        <nav class="menuPrincipal">
-            <ul>
-                <li><a href="../index.html">INICIO</a> </li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="arquitectura.html">ARQUITECTURA</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>              
+    <nav class="navbar navbar-expand-lg bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logotipo" src="../multimedia/logo.jpg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="arquitectura.html">ARQUITECTURA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="servicios.html">SERVICIOS</a>
+              </li>
+              
             </ul>
-        </nav>
-    </header>
-    <main>
-        <fieldset>
-            <legend><h2>DATOS DE CONTACTO</h2></legend>
-            <form action="">
-             <label for="Nombre" class="textoContacto">Nombre:</label>
-                <input type="text"name="Nombre" class="textoRellenar">
-                <label for="Apellido" class="textoContacto">Apellido: </label>
-                <input type="text"name="Apellido" class="textoRellenar">
-                <label for="Email" class="textoContacto">Email:</label>
-                <input type="email"name="Email" class="textoRellenar">
-                <label for="Mensaje" class="textoContacto">Mensaje:</label>
-                <textarea cols="50" rows="15" name="Mensaje"class="textoRellenar"></textarea>
-                <input type="submit" value="Enviar Formulario" class="botonesContacto">
-                <input type="reset" value="Limpiar Formulario" class="botonesContacto">
-            </form>
-        </fieldset>
-    </main> 
-        <hr>
-        <footer class="footer">
-            <p>Derechos reservados a E&M Construcciones</p>
-    
-            <div class="redesFlotantes">
-                <a href="https://www.instagram.com/eymconstrucciones"target="_blank"><img src="../multimedia/instagram.jpg" alt="Instagram"></a>
-                <a href="https://www.facebook.com/eymconstrucciones"target="_blank"><img src="../multimedia/iconofacebook.png" alt="Facebook"></a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h2 class="titulos">DATOS DE CONTACTO</h2>
+        <form action="">
+        <div class="row container  ">
+            <div class="col ms-5">
+              <label for="Nombre" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" name="Nombre" placeholder="Nombre" aria-label="Nombre">
             </div>
-    
-            <div class="whatsapp">
-               <a href="https://web.whatsapp.com/"target="_blank"> <img src="../multimedia/iconowhatsapp.png" alt=""></a>
+            <div class="col">
+              <label for="Apellido" class="form-label">Apellido:</label>
+              <input type="text" class="form-control" name="Apellido" placeholder="Apellido" aria-label="Apellido">
             </div>
-           
-            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.18510361417!2d-58.317042099999995!3d-34.7005109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33267ae84657b%3A0x645bad1f9ae86958!2sEstanislao%20Zeballos%206036%2C%20B1875BNH%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661375122299!5m2!1ses-419!2sar" width="1330" height=100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </footer>  
+          </div>
+          <div class="mb-3 container ms-5">
+            <label for="Email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="Email" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3 container ms-5">
+            <label for="Mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" name="Mensaje" id="exampleFormControlTextarea1" rows="9"></textarea>
+          </div>
+          <div class="col-auto container ms-5">
+            <button type="submit" class="btn btn-primary mb-3">Enviar Formulario</button>
+          </div>
+        </form>
+
+      </main>
+
+      <footer class="footer1 container-fluid">
+        <p>Derechos reservados a E&M Construcciones</p>
+
+        <div class="redesFlotantes">
+            <a href="https://www.instagram.com/eymconstrucciones"target="_blank"><img src="../multimedia/instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/eymconstrucciones"target="_blank"><img src="../multimedia/iconofacebook.png" alt="Facebook"></a>
+        </div>
+
+        <div class="whatsapp">
+           <a href="https://web.whatsapp.com/"target="_blank"> <img src="../multimedia/iconowhatsapp.png" alt=""></a>
+        </div>
+       
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.18510361417!2d-58.317042099999995!3d-34.7005109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33267ae84657b%3A0x645bad1f9ae86958!2sEstanislao%20Zeballos%206036%2C%20B1875BNH%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661375122299!5m2!1ses-419!2sar" width="100%" height=100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
+
 </html>   
