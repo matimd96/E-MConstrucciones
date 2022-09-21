@@ -2,32 +2,12 @@ html{
     font-size: 62,5%;
 }
 
-.menuPrincipal ul{
-    list-style-type: none;
-}
-
-.menuPrincipal ul li{
-display: inline-block;
-padding: 0px 50px;
-
-
-
-
-}
-
-.menuPrincipal{
-    margin: 0px;
-}
 
 .logotipo{
     height: 110px;
     width: 165px;
 }
 
-a{
-    text-decoration: none;
-    color: white;    
-}
 
 body{
     background-color: rgb(117, 115, 112);
@@ -35,10 +15,7 @@ body{
     background-size: cover;
     font-family: 'Lato', sans-serif;}
 
-header{
-    position: sticky;
-    top: 0px;
-}
+
 .titulos{
     text-align: center;
     padding: 10px 0px;
@@ -56,31 +33,11 @@ header{
 
 .tituloIndex1{
     text-align: center;
-    font-size: 40px;
+    font-size: 23px;
     font-weight: bolder;
     font-style: oblique;
 }
 
-.textoContacto{
-    font-weight: bolder;
-    font-style: oblique;
-    font-size: 20px;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-}
-
-.botonesContacto{
-    font-weight: 500;
-    font-size: 15px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.textoRellenar{
-    font-size: 15px;
-    font-style: italic;
-}
 
 .imagenesIndex{
     width: 350px;
@@ -144,45 +101,6 @@ header{
     bottom: 40px;
 }
 
-
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.04fr 0.1fr 1fr 0.2fr;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "section section"
-    "footer footer";
-
-}
-
-.header{
-    background-color:rgba(75, 74, 74, 0.733);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    grid-area: header;
-    
-    
-}
-    
-.main{
-    grid-area: main;
-}
-
-.section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    grid-area: section;
-    
-}
-
-
-
 .imagenesArquitectura1{
     display: flex;
     flex-direction: row;
@@ -205,44 +123,6 @@ header{
 }
 
 
-@media screen and (max-width: 768px) {
-    .menuPrincipal ul li{
-         padding: 0px 10px;
-    }
-    .contenedor{
-        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.15fr;
-    
-    }
-    .imagenesArquitectura{
-        width: 300px;
-        height: 200px;}
-        
-
-}
-
-@media screen and (max-width: 490px) {
-    
-    .tituloIndex1{ 
-        font-size: 23px;
-    }
-    .section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    .menuPrincipal ul li{
-        display: block;
-        
-    }
-
-    .contenedor{
-        grid-template-rows: 0.1fr 0.1fr 1fr 0.15fr;
-    
-    }
-
-}
-
 .bg-nav{
     background-color: rgba(75, 74, 74, 0.733);
     position: sticky;
@@ -262,7 +142,7 @@ header{
     height: 350px;
 }
 
-.imagenesNosotros1 img:hover{
+.imagenesNosotros1  img:hover{
     width: 750px;
     height: 500px;
 }
