@@ -92,8 +92,8 @@ header{
 
 
 .imagenesArquitectura{
-    width: 350px;
-    height: 200px;
+    width: 750px;
+    height: 400px;
     margin: 5px;
 }
 
@@ -135,6 +135,7 @@ header{
 
 .whatsapp img{
     width: 40px;
+    height: 40px;
     display: inline-block;
     position: fixed;
     right: 20px;
@@ -201,25 +202,6 @@ header{
 
 }
 
-.imagenesIndex1 img{
-    transition: all 3s;
-}
-
-.imagenesIndex1 img:hover{
-    width: 550px;
-    height: 400px;
-
-}
-
-.imagenesArquitectura1 img{
-    transition: all 2s;
-
-}
-
-.imagenesArquitectura1 img:hover{
-    width: 450px;
-    height: 300px;
-}
 
 @media screen and (max-width: 768px) {
     .menuPrincipal ul li{
@@ -257,4 +239,17 @@ header{
     
     }
 
+}
+
+.bg-nav{
+    background-color: rgba(75, 74, 74, 0.733);
+    position: sticky;
+    top: 0px;
+    
+}
+
+.footer1{
+    background-color:rgba(75, 74, 74, 0.733);
+    font-weight: bolder;
+    font-style: italic;
 }
