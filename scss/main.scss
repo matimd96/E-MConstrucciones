@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(117, 115, 112);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.logotipo{
+    height: 110px;
+    width: 165px;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.titulos{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+.footer{
+    background-color:rgba(75, 74, 74, 0.733);
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+
+    
+}
+
+.redesFlotantes img{
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    display: inline-block;
+    
+    
+}
+
+.whatsapp img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+
+.bg-nav{
+    background-color: rgba(75, 74, 74, 0.733);
+    position: sticky;
+    top: 0px;
+    
+}
+
+.footer1{
+    background-color:rgba(75, 74, 74, 0.733);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@import "index";
+@import "arquitectura";
+@import "nosotros";

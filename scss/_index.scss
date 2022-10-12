@@ -1,0 +1,32 @@
+.subtituloIndex{
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.tituloIndex1{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+
+.imagenesIndex{
+    width: 350px;
+    height: 250px;
+    margin: 5px;
+    
+}
+
+.imagenesIndex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    grid-area: section;
+     
+
+}

@@ -1,0 +1,28 @@
+.imagenesArquitectura{
+    width: 750px;
+    height: 400px;
+    margin: 5px;
+}
+
+.subtitulosArquitectura{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    text-justify: center;
+    text-decoration: underline;
+}
+
+.subsubtitulosArquitectura{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.imagenesArquitectura1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: flex-end;
+}
